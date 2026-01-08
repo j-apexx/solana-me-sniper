@@ -33,6 +33,8 @@ func Run(ctx context.Context) error {
 		notificationService = telegramBot
 	}
 
+	meClient := magiceden.New(ctx)
+
 	sniperService, err := sniper.New(
 		meClient,
 		notificationService,
