@@ -26,7 +26,6 @@ type Config struct {
 	BotAPIToken    string `yaml:"bot-api-token"`
 	SolanaEndpoint string `yaml:"solana-endpoint"`
 	MEAPIKey       string `yaml:"me-api-key"`
-	PrivateKey     string `yaml:"private-key"`
 }
 
 func Init() error {
