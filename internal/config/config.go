@@ -51,6 +51,8 @@ func Get(key int) interface{} {
 		return conf.SolanaEndpoint
 	case MEAPIKey:
 		return conf.MEAPIKey
+	case PrivateKey:
+		return conf.PrivateKey
 	default:
 		panic(ErrConfigNotFoundByKey(key))
 	}
