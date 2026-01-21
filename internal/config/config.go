@@ -35,11 +35,6 @@ func Init() error {
 		return fmt.Errorf("os.ReadFile: %w", err)
 	}
 
-	err = yaml.Unmarshal(body, &conf)
-	if err != nil {
-		return fmt.Errorf("yaml.Unmarshal: %w", err)
-	}
-
 	return nil
 }
 
