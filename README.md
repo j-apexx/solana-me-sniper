@@ -6,7 +6,7 @@ Solana MagicEden NFT Sniper is an on-chain MagicEden sniper that detects all new
 
 1. Clone repository.
     ```bash
-    git clone https://github.com/tot-git27/solana-me-sniper.git
+    git clone https://github.com/j-apexx/solana-me-sniper.git
      ```
 2. Fill in config file (configs/values_local.yaml) with the following variables:
 
@@ -21,7 +21,7 @@ Solana MagicEden NFT Sniper is an on-chain MagicEden sniper that detects all new
 
     ME_APIKEY and PRIVATE_KEY variables are only needed if you want to automatically buy NFTs, otherwise jusk skip them.
     
-    [Add autobuy conditions here](https://github.com/tot-git27/solana-me-sniper/blob/main/pkg/sniper/sniper.go#L99)
+    [Add autobuy conditions here](https://github.com/j-apexx/solana-me-sniper/blob/main/pkg/sniper/sniper.go#L99)
 
     You can get Solana RPC node for free at https://www.quicknode.com
 3. Run script
