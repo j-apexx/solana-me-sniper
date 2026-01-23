@@ -31,9 +31,6 @@ type Config struct {
 
 func Init() error {
 	body, err := os.ReadFile("./configs/values_local.yaml")
-	if err != nil {
-		return fmt.Errorf("os.ReadFile: %w", err)
-	}
 
 	err = yaml.Unmarshal(body, &conf)
 	if err != nil {
