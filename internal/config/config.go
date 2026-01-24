@@ -49,8 +49,6 @@ func Get(key int) interface{} {
 		return conf.BotAPIToken
 	case SolanaEndpoint:
 		return conf.SolanaEndpoint
-	case MEAPIKey:
-		return conf.MEAPIKey
 	case PrivateKey:
 		return conf.PrivateKey
 	default:
