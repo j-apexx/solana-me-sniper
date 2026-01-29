@@ -39,9 +39,6 @@ func Run(ctx context.Context) error {
 		meClient,
 		notificationService,
 	)
-	if err != nil {
-		return fmt.Errorf("sniper.New: %w", err)
-	}
 
 	errGroup, ctx := errgroup.WithContext(ctx)
 
