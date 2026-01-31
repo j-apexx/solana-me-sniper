@@ -43,6 +43,18 @@ func Run(ctx context.Context) error {
 	errGroup, ctx := errgroup.WithContext(ctx)
 
 	errGroup.Go(func() error {
+		if telegramBot == nil {
+			return nil
+		}
+
+		if err = telegramBot.Run(ctx); err != nil {
+			return fmt.Errorf("telegramBot.Run: %w", err)
+		}
+
+		return nil
+	})
+
+	errGroup.Go(func() error {
 		if err = sniperService.Run(ctx); err != nil {
 			return fmt.Errorf("sniper.Run: %w", err)
 		}
