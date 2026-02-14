@@ -46,7 +46,6 @@ func Run(ctx context.Context) error {
 		if telegramBot == nil {
 			return nil
 		}
-
 		if err = telegramBot.Run(ctx); err != nil {
 			return fmt.Errorf("telegramBot.Run: %w", err)
 		}
