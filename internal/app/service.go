@@ -39,7 +39,6 @@ func Run(ctx context.Context) error {
 		meClient,
 		notificationService,
 	)
-
 	errGroup, ctx := errgroup.WithContext(ctx)
 
 	errGroup.Go(func() error {
