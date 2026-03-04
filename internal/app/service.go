@@ -20,7 +20,7 @@ func Run(ctx context.Context) error {
 	)
 
 	notificationService = notificator.New()
-	
+
 	botAPIToken := config.Get(config.BotAPIToken).(string)
 	
 	if botAPIToken != "" {
@@ -40,6 +40,7 @@ func Run(ctx context.Context) error {
 		meClient,
 		notificationService,
 	)
+	
 	errGroup, ctx := errgroup.WithContext(ctx)
 
 	errGroup.Go(func() error {
