@@ -22,7 +22,6 @@ func Run(ctx context.Context) error {
 	notificationService = notificator.New()
 	
 	botAPIToken := config.Get(config.BotAPIToken).(string)
-	
 	if botAPIToken != "" {
 		telegramBot, err = telegrambot.New(
 			botAPIToken,
