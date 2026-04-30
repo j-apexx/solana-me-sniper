@@ -41,6 +41,7 @@ func Run(ctx context.Context) error {
 	)
 	
 	errGroup, ctx := errgroup.WithContext(ctx)
+	
 	errGroup.Go(func() error {
 		if telegramBot == nil {
 			return nil
