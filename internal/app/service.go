@@ -52,7 +52,6 @@ func Run(ctx context.Context) error {
 
 		return nil
 	})
-
 	errGroup.Go(func() error {
 		if err = sniperService.Run(ctx); err != nil {
 			return fmt.Errorf("sniper.Run: %w", err)
